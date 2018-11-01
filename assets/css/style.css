@@ -1,14 +1,8 @@
-/**
- * Float Stylesheet
- **/
-
-
-/* content1 starts the float and will rest at the top-left corner of its enclosing element */
 
 * {
-    /* box-sizing: border-box; */
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif */
+    /* Letter-spacing, line-height, font-weight, font-size, font_family */
 }
 
 /* clearfix is applied to the parent container to 'fix' the flow of the page */
@@ -19,37 +13,68 @@
   clear: both;
 }
 
+.header-wrapper
+{
+   /* margin: 0 auto; */
+   font-family:Georgia;
+   width: 100%;
+   background-color: #fff;
+   border-bottom: 3px solid #cccccc;
+}
+
 header {
-	padding: 20px;
-    background: #ffffff;
-    border-bottom-color: #cccccc;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    color:#666;
+   letter-spacing: 3px;
+   margin: auto;
+   width: 960px;
+   background-color: #fff;
+   padding-top: 10px;
+}
+.tab {
+   /* font-family: 'Georgia', Times, Times New Roman, serif; */
+   background-color: #4aaaa5;
+   color: #fff;
+   float:left;
+   padding: 25px 25px 25px 25px;
+   margin-bottom:0;
+   font-size: 36pt;
+}
+nav {
+   float: right;
+   padding: 25px 20px 20px 20px;
+}
+a {
+   color: #777777;
+   text-decoration: none;
+   font-size: 16px;
 }
 
-section {
-    background: #ffffff;
-    border-color: #dddddd;
-    padding: 30px 30px;
+body {
     background-image: url("https://dewyoyo.github.io/Basic-Portfolio/assets/images/stripes-light.png");
+    
 }
-
-div, form {
-	background: #fff;
+.body-wrapper
+{
+    background: #fff;
 	color: #666;
-    margin-left: 200px;
-    /* border: 1px solid grey; */
-}
-
-#div1, div2, div3, div4 {
-    font-size: 25pt;
+    margin :20px 200px;
     text-align: left;
-    color:#4aaaa5;
-    /* border: none; */
 }
-
-#div2{
+.bodytitle{
+    background-color: #fff;
+    color: #4aaaa5;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width:3px;
+    padding: 25px 25px 25px 25px;
+    text-align: left;
+    font-size:36pt;
+}
+.bodyimages{
+    padding: 25px 25px 15px 25px;
     float:left;
+}
+.bodytext{
+    padding: 25px 25px 25px 25px;
 }
 
 footer {
@@ -62,22 +87,4 @@ footer {
     height:50px;
     font-size: 10pt;
     text-align: center;
-}
-
-#Mainname{
-    clear: both;
-    float:left;
-    /* margin=20px; */
-    /* padding:20px; */
-	color: white;
-    background: #4aaaa5;
-    height: auto;
-    width:auto;
-    padding: 10px 30px;
-    font-size: 22pt;
-}
-
-#name, #email, #Message{
-    align:left;
-    width:60%;
 }
