@@ -13,37 +13,43 @@
 
 <body>
 
-    <header>
-        <div id="Mainname">
-            Christine Lee
-        </div>
+    <!-- Top Header : Title(name) and navigation bar -->
+    <div class="header-wrapper clearfix">
+        <header class="clearfix">
+            <div class="tab">
+                Christine Lee
+            </div>
+            <nav>
+                <a href="index.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+    </div>
 
-        about |
-        Portfolio |
-        contact
-    </header>
-
-    <form>
-        <div id="div1">
+    <div class="body-wrapper clearfix">
+        <div class="bodytitle">
             contact
         </div>
-        <div id="div2">
-            <label for "name">Name:</label>
-            <input type="text" id="name" name="name">
-        </div>
-        
-        <div id="div3">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
-        </div>
-        
-        <div id="div4">
-            <label for="Message">Message:</label>
-            <textarea id="Message" name="Message" rows="10"></textarea>
-        </div>
 
-        <input type="submit" value="submit">
-    </form>
+        <div class="bodytext">
+            <div class="insidebodytest bodytext">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="insidebodytest bodytext">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div class="insidebodytest bodytext">
+                <label for="Message">Message:</label>
+                <textarea id="Message" name="Message" rows="10"></textarea>
+            </div>
+
+        </div>
+    </div>
 
     <footer>
         copyright
