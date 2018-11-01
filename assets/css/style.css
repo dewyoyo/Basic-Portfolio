@@ -1,0 +1,83 @@
+/**
+ * Float Stylesheet
+ **/
+
+
+/* content1 starts the float and will rest at the top-left corner of its enclosing element */
+
+* {
+    /* box-sizing: border-box; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* clearfix is applied to the parent container to 'fix' the flow of the page */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+	padding: 20px;
+    background: #ffffff;
+    border-bottom-color: #cccccc;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color:#666;
+}
+
+section {
+    background: #ffffff;
+    border-color: #dddddd;
+    padding: 30px 30px;
+    background-image: url("https://dewyoyo.github.io/Basic-Portfolio/assets/images/stripes-light.png");
+}
+
+div, form {
+	background: #fff;
+	color: #666;
+    margin-left: 200px;
+    /* border: 1px solid grey; */
+}
+
+#div1, div2, div3, div4 {
+    font-size: 25pt;
+    text-align: left;
+    color:#4aaaa5;
+    /* border: none; */
+}
+
+#div2{
+    float:left;
+}
+
+footer {
+    clear: both;
+    color: white;
+	background: #666666;
+	border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 5px;
+    height:50px;
+    font-size: 10pt;
+    text-align: center;
+}
+
+#Mainname{
+    clear: both;
+    float:left;
+    /* margin=20px; */
+    /* padding:20px; */
+	color: white;
+    background: #4aaaa5;
+    height: auto;
+    width:auto;
+    padding: 10px 30px;
+    font-size: 22pt;
+}
+
+#name, #email, #Message{
+    align:left;
+    width:60%;
+}
